@@ -1,2 +1,79 @@
- 
+ *{
+     /*os elementos já tem um padding e margin pré-establecido, mas distintos. POr isso é necessário definir*/
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     color: #000000;
+     font-family: 'Bebas Neue', cursive;
+ }
 
+ ul{
+     list-style: none;
+     font-size: 30px;
+     font-style: italic;
+     font-weight: 400;
+ }
+                                      
+ a{
+     /*link sem decoração*/
+     text-decoration: none;
+ }
+
+body{
+    /*height: 100vp; para forçar o background ficar a tela inteira*/
+    background-image: url(./image/fundo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    /*background: url(./image/fundo.jpeg) no-repeat center center fixed;*/
+    background-size: cover; /*para cubrir toda tela independete do tamanho da tela*/
+    /*colocando gradiente como cor de fundo
+    background: linear-gradient(90deg, #ED213A, #333333);*/
+}
+
+header{
+    display: flex; /*permite que seja um bloco só*/
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 5px;
+}
+
+.contanier{
+    text-align: center;
+}
+
+.contanier .name h1{
+    font-size: 80px;
+}
+
+.contanier .name h5{
+    font-size: 40px;
+}
+
+#about p{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input{
+    width: 50%;
+}
+
+.form button{
+    width: 15%;
+}
+img{
+    opacity: 0.5;
+}
